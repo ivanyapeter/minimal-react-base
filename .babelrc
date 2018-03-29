@@ -1,7 +1,17 @@
 {
   "presets": [
-    "env",
     "react",
-    "stage-2"
+    [
+      "env",
+      {
+        "targets": {
+          "node": "current"
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    "transform-class-properties",
+    "transform-object-rest-spread"
   ]
 }
